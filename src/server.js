@@ -2,7 +2,8 @@
 
 // Env vars
 if (process.env.NODE_ENV === 'development') {
-  require('dotenv').config();
+  const dotenv = require('dotenv');
+  dotenv.config();
 }
 
 // Deps
@@ -17,7 +18,7 @@ const port = PORT || 4444;
 const server = new Hapi.Server({ port });
 
 // Run
-(async function() {
+(async () => {
   try {
     await server.start();
     Logger.info(`Server started on port ${port}`);
