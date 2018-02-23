@@ -1,5 +1,11 @@
 'use strict';
 
-const routes = [];
+const routes = [
+  {
+    method: 'GET',
+    path: '/coinlist',
+    options: require('./coinlist/fetch')
+  }
+];
 
 module.exports = routes;

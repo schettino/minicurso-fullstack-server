@@ -10,6 +10,8 @@
     "boom": "^7.1.1",
     "dotenv": "^5.0.0",
     "hapi": "^17.2.0",
+    "lodash": "^4.17.5",
+    "node-fetch": "^2.0.0",
     "winston": "^2.4.0"
   },
   "devDependencies": {
